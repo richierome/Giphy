@@ -35,7 +35,7 @@
     userInput = userInput.replace(/ /g, "+");
     console.log(userInput);
     // Create the Giphy API URL
-    var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + userInput + '&api_key=dVJP0CdMogu2llnS67Y7GCZtHubYUCHr';
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + userInput + '&api_key=dVJP0CdMogu2llnS67Y7GCZtHubYUCHr';
 
     // Part 2 - Use AJAX to call GIPHY API (note that the .done() function waits for the API to respond)
     $.ajax({url: queryURL, method: 'GET'}).done(function(response){
